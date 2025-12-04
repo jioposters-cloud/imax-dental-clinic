@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMAX Dental Clinic - Canva Portfolio</title>
+  <title>IMAX Dental Clinic - Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -14,154 +14,125 @@
     html, body {
       height: 100%;
       width: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      overflow-x: hidden;
-    }
-    
-    .wrapper {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
     }
     
     .container {
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
     
-    .canva-frame {
-      position: relative;
-      width: 100%;
-      padding-top: 500%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
-      background: #000;
+    .card {
+      background: white;
+      border-radius: 12px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    }
-    
-    .canva-frame iframe {
-      position: absolute;
-      top: -200px;
-      left: 0;
+      padding: 50px 40px;
+      max-width: 500px;
       width: 100%;
-      height: calc(100% + 200px);
-      border: none;
-    }
-    
-    .fallback-message {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       text-align: center;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 40px 30px;
-      border-radius: 8px;
-      z-index: 100;
-      max-width: 90%;
-      width: 300px;
     }
     
-    .fallback-message h2 {
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 32px;
       color: #333;
       margin-bottom: 15px;
-      font-size: 18px;
+      font-weight: 700;
     }
     
-    .fallback-message p {
+    .subtitle {
+      font-size: 16px;
       color: #666;
-      font-size: 14px;
-      margin-bottom: 20px;
-      line-height: 1.5;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
     
-    .fallback-btn {
+    .button {
       display: inline-block;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
-      padding: 12px 30px;
-      border-radius: 5px;
+      padding: 15px 40px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 14px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      font-size: 16px;
+      transition: all 0.3s ease;
       border: none;
       cursor: pointer;
+      margin-bottom: 15px;
     }
     
-    .fallback-btn:hover {
+    .button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
     }
     
-    /* Desktop */
-    @media (min-width: 769px) {
-      .canva-frame {
-        padding-top: 550%;
-      }
-      .canva-frame iframe {
-        top: -250px;
-        height: calc(100% + 250px);
-      }
+    .secondary-btn {
+      display: inline-block;
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 15px;
+      padding: 10px 20px;
     }
     
-    /* Tablet */
-    @media (max-width: 768px) and (min-width: 481px) {
-      .canva-frame {
-        padding-top: 500%;
-      }
-      .canva-frame iframe {
-        top: -180px;
-        height: calc(100% + 180px);
-      }
+    .secondary-btn:hover {
+      text-decoration: underline;
     }
     
-    /* Mobile */
-    @media (max-width: 480px) {
-      .canva-frame {
-        padding-top: 520%;
-      }
-      .canva-frame iframe {
-        top: -160px;
-        height: calc(100% + 160px);
-      }
-      
-      .fallback-message {
-        width: 90%;
-        padding: 30px 20px;
+    .info {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+    
+    @media (max-width: 600px) {
+      .card {
+        padding: 35px 25px;
       }
       
-      .fallback-message h2 {
-        font-size: 16px;
+      h1 {
+        font-size: 24px;
       }
       
-      .fallback-message p {
-        font-size: 13px;
+      .subtitle {
+        font-size: 14px;
+      }
+      
+      .button {
+        padding: 12px 30px;
+        font-size: 14px;
+      }
+      
+      .icon {
+        font-size: 48px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <div class="canva-frame">
-        <iframe src="https://saiimpex.my.canva.site/imax" title="IMAX Dental Clinic Portfolio"></iframe>
-        
-        <!-- Fallback message if iframe fails to load -->
-        <div class="fallback-message">
-          <h2>📱 Portfolio</h2>
-          <p>If the portfolio isn't displaying, click below to view it directly.</p>
-          <a href="https://saiimpex.my.canva.site/imax" target="_blank" class="fallback-btn">View Portfolio →</a>
-        </div>
-      </div>
+  <div class="container">
+    <div class="card">
+      <div class="icon">🦷</div>
+      <h1>IMAX Dental Clinic</h1>
+      <p class="subtitle">Professional Dental Services - Explore our portfolio and services</p>
+      
+      <a href="https://saiimpex.my.canva.site/imax" target="_blank" class="button">View Our Portfolio →</a>
+      
+      <p class="info">
+        <strong>Note:</strong> This page will open our complete portfolio in your browser. Updates made to our Canva portfolio will be reflected in real-time.
+      </p>
     </div>
   </div>
 </body>
