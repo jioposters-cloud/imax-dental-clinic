@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IMAX Dental Clinic – Deesa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+    body{color:#222;line-height:1.6;background:#f5f7fb;}
+    header{background:#004aad;color:#fff;padding:18px 20px;position:sticky;top:0;z-index:10;}
+    header .logo{font-weight:700;font-size:20px;}
+    header nav{margin-top:8px;font-size:14px;}
+    header nav a{color:#fff;margin-right:14px;text-decoration:none;}
+    header nav a:hover{text-decoration:underline;}
+
+    .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:32px 20px 24px;max-width:1100px;margin:0 auto;}
+    .hero-text{flex:1 1 320px;padding-right:20px;}
+    .hero-text h1{font-size:28px;margin-bottom:10px;color:#00347a;}
+    .hero-text p{margin-bottom:12px;font-size:15px;}
+    .btn{display:inline-block;background:#ff7a00;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-size:14px;}
+    .btn:hover{background:#e56c00;}
+
+    .hero-card{flex:1 1 260px;background:#fff;border-radius:14px;padding:18px;box-shadow:0 4px 14px rgba(0,0,0,0.06);}
+    .hero-card h2{font-size:18px;margin-bottom:8px;color:#00347a;}
+    .hero-card ul{list-style:none;font-size:14px;}
+    .hero-card li{margin-bottom:4px;}
+
+    section{max-width:1100px;margin:0 auto;padding:18px 20px;}
+    h2.section-title{font-size:20px;margin-bottom:8px;color:#00347a;}
+
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:8px;}
+    .service-box{background:#fff;border-radius:12px;padding:12px 14px;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
+    .service-box h3{font-size:15px;margin-bottom:4px;color:#004aad;}
+
+    .two-col{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px;}
+    .two-col > div{flex:1 1 260px;background:#fff;border-radius:12px;padding:12px 14px;font-size:14px;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
+
+    .contact-row{font-size:14px;margin-bottom:4px;}
+    .contact-row b{display:inline-block;width:70px;}
+
+    footer{margin-top:16px;padding:16px 20px;font-size:12px;background:#00347a;color:#fff;text-align:center;}
+
+    @media (max-width:600px){
+      header{position:static;text-align:center;}
+      header nav{margin-top:4px;}
+      .hero{padding-top:18px;}
+      .hero-text{padding-right:0;margin-bottom:14px;}
+      .hero-text h1{font-size:24px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">IMAX Dental Clinic</div>
+  <nav>
+    <a href="#services">Treatments</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Gentle, modern dental care in Deesa</h1>
+      <p>Comfort-focused root canals, fillings, cleaning, and smile corrections with digital X-ray and advanced instruments.</p>
+      <p><b>Location:</b> IMAX Dental Clinic, Deesa, Gujarat</p>
+      <a class="btn" href="tel:+91XXXXXXXXXX">Call for appointment</a>
+    </div>
+
+    <div class="hero-card">
+      <h2>Today's timings</h2>
+      <ul>
+        <li>Morning: 10:00 am – 1:30 pm</li>
+        <li>Evening: 4:30 pm – 8:30 pm</li>
+        <li>Sunday by prior appointment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Key treatments</h2>
+    <div class="services-grid">
+      <div class="service-box">
+        <h3>Root canal (RCT)</h3>
+        <p>Pain-relief single and multi-visit RCT with digital X-ray guidance.</p>
+      </div>
+      <div class="service-box">
+        <h3>Fillings & cavities</h3>
+        <p>Tooth-colored composite fillings for decayed or broken teeth.</p>
+      </div>
+      <div class="service-box">
+        <h3>Cleaning & polishing</h3>
+        <p>Ultrasonic scaling for gum health and stain removal.</p>
+      </div>
+      <div class="service-box">
+        <h3>Crowns & bridges</h3>
+        <p>Metal-ceramic and zirconia crowns for long-term protection.</p>
+      </div>
+      <div class="service-box">
+        <h3>Extractions</h3>
+        <p>Safe removal of badly damaged or mobile teeth.</p>
+      </div>
+      <div class="service-box">
+        <h3>Smile improvement</h3>
+        <p>Spacing, shape correction and simple cosmetic procedures.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Why patients choose IMAX</h2>
+    <div class="two-col">
+      <div>
+        <p>- Clear explanation of problems and treatment options.</p>
+        <p>- Focus on painless dentistry and infection control.</p>
+        <p>- Transparent charges and stage-wise treatment planning.</p>
+      </div>
+      <div>
+        <p>- Digital records to track your dental history.</p>
+        <p>- Patient education for brushing, diet, and tobacco cessation.</p>
+        <p>- Convenient timings for working patients and families.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact & location</h2>
+    <div class="two-col">
+      <div>
+        <div class="contact-row"><b>Phone:</b> +91 XXXXX XXXXX</div>
+        <div class="contact-row"><b>WhatsApp:</b> +91 XXXXX XXXXX</div>
+        <div class="contact-row"><b>Email:</b> yourmail@example.com</div>
+        <div class="contact-row"><b>Address:</b> IMAX Dental Clinic, Deesa, Gujarat</div>
+      </div>
+      <div>
+        <p>Paste your Google Maps link here:</p>
+        <p><a href="https://maps.app.goo.gl/your-clinic-link" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © IMAX Dental Clinic, Deesa – All rights reserved.
+</footer>
+
+</body>
+</html>
