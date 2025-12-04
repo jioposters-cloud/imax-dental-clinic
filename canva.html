@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMAX Dental Clinic - Portfolio</title>
+  <title>IMAX Dental Clinic</title>
   <style>
     * {
       margin: 0;
@@ -14,54 +14,21 @@
     html, body {
       width: 100%;
       height: 100%;
-      background: #f5f5f5;
+      overflow: hidden;
     }
     
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      padding: 20px;
     }
     
-    .wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    
-    .header h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    
-    .header p {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-    
-    .content {
-      padding: 20px;
-    }
-    
-    .canva-embed-wrapper {
+    .canva-container {
       position: relative;
       width: 100%;
-      height: 0;
-      padding-bottom: 663.6164%;
-      overflow: hidden;
-      border-radius: 4px;
+      height: 100%;
+      padding-bottom: 0;
     }
     
-    .canva-embed-wrapper iframe {
+    .canva-container iframe {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -71,45 +38,11 @@
       padding: 0;
       margin: 0;
     }
-    
-    .info {
-      margin-top: 20px;
-      padding: 15px;
-      background: #f0f4ff;
-      border-left: 4px solid #667eea;
-      border-radius: 4px;
-      font-size: 13px;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    @media (max-width: 600px) {
-      .header h1 {
-        font-size: 20px;
-      }
-      
-      .content {
-        padding: 15px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>IMAX Dental Clinic</h1>
-      <p>Professional Dental Services & Portfolio</p>
-    </div>
-    
-    <div class="content">
-      <div class="canva-embed-wrapper">
-        <iframe loading="lazy" src="https://www.canva.com/design/DAG55eK6iUM/Fur3b5ESt-49hOgCJv-MDQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-      </div>
-      
-      <div class="info">
-        <strong>📱 Responsive Portfolio:</strong> This portfolio displays beautifully on all devices. Any updates you make to your Canva design will be reflected here automatically.
-      </div>
-    </div>
+  <div class="canva-container">
+    <iframe loading="lazy" src="https://www.canva.com/design/DAG55eK6iUM/Fur3b5ESt-49hOgCJv-MDQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
   </div>
 </body>
 </html>
