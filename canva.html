@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMAX Dental Clinic - Canva Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * {
       margin: 0;
@@ -11,75 +11,95 @@
       box-sizing: border-box;
     }
     
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
-    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      padding: 20px;
     }
     
     .container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 500px;
       width: 100%;
-      height: 100%;
-      position: relative;
     }
     
-    /* Responsive wrapper using object element */
-    .wrapper {
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
+    .icon {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
     
-    iframe {
-      width: 100%;
-      height: 100%;
+    h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .button {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
       border: none;
-      display: block;
+      cursor: pointer;
     }
     
-    /* Mobile responsive */
-    @media (max-width: 767px) {
-      .wrapper {
-        height: auto;
-        min-height: 100vh;
-      }
-      
-      iframe {
-        min-height: 1000px;
-      }
+    .button:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
     }
     
-    /* Tablet responsive */
-    @media (min-width: 768px) and (max-width: 1199px) {
-      .wrapper {
-        height: auto;
-        min-height: 100vh;
+    .info {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
       }
       
-      iframe {
-        min-height: 900px;
+      h1 {
+        font-size: 22px;
+      }
+      
+      p {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="wrapper">
-      <!-- Canva site embedded directly - fully responsive -->
-      <iframe 
-        src="https://saiimpex.my.canva.site/imax" 
-        title="IMAX Dental Clinic - Canva Site"
-        allowfullscreen 
-        loading="lazy">
-      </iframe>
+    <div class="icon">🦷</div>
+    <h1>IMAX Dental Clinic</h1>
+    <p>View our professional Canva-designed portfolio with all the latest updates on our services, team, and innovations.</p>
+    <a href="https://saiimpex.my.canva.site/imax" class="button" target="_blank" rel="noopener noreferrer">View Full Portfolio</a>
+    <div class="info">
+      <p>This page redirects to our live Canva portfolio. It will open in a new tab with the latest design and updates.</p>
     </div>
   </div>
 </body>
