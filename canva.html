@@ -12,127 +12,103 @@
     }
     
     html, body {
-      height: 100%;
       width: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      height: 100%;
+      background: #f5f5f5;
     }
     
-    .container {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       padding: 20px;
     }
     
-    .card {
+    .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-      padding: 50px 40px;
-      max-width: 500px;
-      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
     
-    .icon {
-      font-size: 64px;
-      margin-bottom: 20px;
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
     
-    h1 {
-      font-size: 32px;
-      color: #333;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-    
-    .subtitle {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-    
-    .button {
-      display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 15px 40px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      transition: all 0.3s ease;
-      border: none;
-      cursor: pointer;
-      margin-bottom: 15px;
-    }
-    
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
-    }
-    
-    .secondary-btn {
-      display: inline-block;
-      color: #667eea;
-      text-decoration: none;
-      font-weight: 500;
+    .header p {
       font-size: 14px;
-      margin-top: 15px;
-      padding: 10px 20px;
+      opacity: 0.9;
     }
     
-    .secondary-btn:hover {
-      text-decoration: underline;
+    .content {
+      padding: 20px;
+    }
+    
+    .canva-embed-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 663.6164%;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    
+    .canva-embed-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+      padding: 0;
+      margin: 0;
     }
     
     .info {
-      margin-top: 40px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
+      margin-top: 20px;
+      padding: 15px;
+      background: #f0f4ff;
+      border-left: 4px solid #667eea;
+      border-radius: 4px;
       font-size: 13px;
-      color: #999;
+      color: #333;
+      line-height: 1.6;
     }
     
     @media (max-width: 600px) {
-      .card {
-        padding: 35px 25px;
+      .header h1 {
+        font-size: 20px;
       }
       
-      h1 {
-        font-size: 24px;
-      }
-      
-      .subtitle {
-        font-size: 14px;
-      }
-      
-      .button {
-        padding: 12px 30px;
-        font-size: 14px;
-      }
-      
-      .icon {
-        font-size: 48px;
+      .content {
+        padding: 15px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="icon">🦷</div>
+  <div class="wrapper">
+    <div class="header">
       <h1>IMAX Dental Clinic</h1>
-      <p class="subtitle">Professional Dental Services - Explore our portfolio and services</p>
+      <p>Professional Dental Services & Portfolio</p>
+    </div>
+    
+    <div class="content">
+      <div class="canva-embed-wrapper">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAG55eK6iUM/Fur3b5ESt-49hOgCJv-MDQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+      </div>
       
-      <a href="https://saiimpex.my.canva.site/imax" target="_blank" class="button">View Our Portfolio →</a>
-      
-      <p class="info">
-        <strong>Note:</strong> This page will open our complete portfolio in your browser. Updates made to our Canva portfolio will be reflected in real-time.
-      </p>
+      <div class="info">
+        <strong>📱 Responsive Portfolio:</strong> This portfolio displays beautifully on all devices. Any updates you make to your Canva design will be reflected here automatically.
+      </div>
     </div>
   </div>
 </body>
